@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(247, 244, 244);
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto 290px 60px 70px;
+  grid-gap: 40px;
+  grid-template-areas:
+    "h h h h h h h h"
+    "s s s s s n n n"
+    ". . . . . n n n"
+    "f f f f f f f f";
+}
+
+.header {
+  grid-area: h;
+  background-color: darkblue;
+  width: 14%vw;
+  color: white;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+  margin-left: 160px;
+}
+
+.nit {
+  margin-left: 200px;
+  font-size: 200%;
+}
+
+.nav {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+div > a {
+  text-decoration: none;
+  color: white;
+}
+
+.side-box {
+  grid-area: s;
+  margin-left: 50px;
+  background-color: rgb(128, 77, 77);
+  color: white;
+}
+
+.news {
+  grid-area: n;
+  border-radius: 3px;
+  background-color: chocolate;
+  margin: 25px 30px 0px 0px;
+  color: white;
+  display: grid;
+  grid-gap: 5px;
+  grid-auto-rows: auto;
+  grid-template-areas:
+    "n  n  n  n  n  n  n  n  n  n "
+    "f1 f1 f1 f1 f1 f1 f1 f1 f1 f1"
+    "f2 f2 f2 f2 f2 f2 f2 f2 f2 f2"
+    "f3 f3 f3 f3 f3 f3 f3 f3 f3 f3"
+    "f4 f4 f4 f4 f4 f4 f4 f4 f4 f4";
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+
+.indicator1 {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  left: 350%;
+}
+
+.indicator2 {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  left: 450%;
+}
+
+.indicator3 {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  left: 550%;
+}
+
+.indicator4 {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  left: 650%;
+}
+
+.newsfeed {
+  grid-area: n;
+  position: relative;
+}
+
+.pushup {
+  position: absolute;
+  top: -45%;
+  left: 5%;
+  background-color: darkblue;
+  border-radius: 3px;
+  width: 90%;
+  height: 60px;
+}
+
+.feed {
+  position: relative;
+}
+
+.feed-pushup {
+  position: absolute;
+  top: -10%;
+  left: 5%;
+  background-color: cornsilk;
+  border-radius: 3px;
+  width: 90%;
+  height: 100%;
+  color: #000;
+}
+
+.feed1 {
+  grid-area: f1;
+}
+
+.feed2 {
+  grid-area: f2;
+}
+
+.feed3 {
+  grid-area: f3;
+}
+
+.feed4 {
+  grid-area: f4;
+}
+
+.footer {
+  grid-area: f;
+  background-color: #00008b;
+  color: white;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 30px;
+}
